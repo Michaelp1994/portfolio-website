@@ -13,7 +13,7 @@ const skills = [
   { name: "Node.js", Icon: NodeIcon },
 ];
 
-const GITHUB_URL = "https://github.com/Michaelp1994/neurosurgery-logbook";
+const GITHUB_URL = "https://github.com/Michaelp1994/eslint-plugin-typegraphql";
 const ProjectThree: React.FC<Props> = () => {
   return (
     <Wrapper>

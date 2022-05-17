@@ -18,7 +18,7 @@ const skills = [
 ];
 
 interface Props {}
-const GITHUB_URL = "https://github.com/Michaelp1994/";
+const GITHUB_URL = "https://github.com/Michaelp1994/portfolio-website";
 const ProjectTwo: React.FC<Props> = () => {
   return (
     <Wrapper>
