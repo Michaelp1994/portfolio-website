@@ -1,12 +1,22 @@
 {
-  "name": "gatsby-starter-minimal-ts",
+  "name": "personal-portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "A Gatsby starter written in TypeScript with no plugins and a single welcome page.",
-  "author": "Jude Agboola",
+  "description": "The Personal Portfolio of Michael Poulgrain.",
+  "author": {
+    "name": "Michael Poulgrain",
+    "email": "michael.poulgrain@gmail.com",
+    "url": "https://www.michaelpoulgrain.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Michaelp1994/portfolio-website"
+  },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "portfolio"
   ],
+  "homepage": "https://github.com/Michaelp1994/portfolio-website",
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
@@ -15,7 +25,7 @@
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit"
   },
-  "license": "0BSD",
+  "license": "MIT",
   "dependencies": {
     "@reach/dialog": "^0.17.0",
     "@reach/tooltip": "^0.17.0",
