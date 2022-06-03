@@ -12,6 +12,7 @@ const Contact: React.FC<Props> = () => {
         Interested in working together or have a question? Get in touch below!
       </Subtitle>
       <FormWrapper name="contact" method="post" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
         <InputLabel>
           <LabelText>Name</LabelText>
           <NameInput name="name" placeholder="John Smith" />
@@ -42,14 +43,6 @@ const Wrapper = styled.section`
 const SectionTitle = styled.h1`
   font-size: var(--heading-size);
   font-weight: 700;
-`;
-
-const TitleUnderline = styled.hr`
-  margin-top: 12px;
-  margin-bottom: 48px;
-  border-radius: 5px;
-  border: 1px solid rgb(229, 231, 235);
-  outline: none;
 `;
 
 const Subtitle = styled.div`
