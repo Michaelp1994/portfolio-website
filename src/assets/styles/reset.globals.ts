@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import "@reach/tooltip/styles.css";
 
 export default createGlobalStyle`
 html, body, div, span, applet, object, iframe,

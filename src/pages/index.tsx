@@ -1,13 +1,14 @@
 import * as React from "react";
 import styled from "styled-components";
-import GlobalStyles from "../components/GlobalStyles";
-import Header from "../components/Header";
-import About from "../components/About";
-import Projects from "../components/Projects";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
-import Skills from "../components/Skills";
 import { Helmet } from "react-helmet";
+
+import GlobalStyles from "../assets/styles";
+import Header from "../features/Header";
+import About from "../features/About";
+import Projects from "../features/Projects";
+import Contact from "../features/Contact";
+import Footer from "../features/Footer";
+import Skills from "../features/Skills";
 
 const IndexPage = () => {
   return (
@@ -44,6 +45,7 @@ const Page = styled.div`
 `;
 
 const Main = styled.main``;
+
 const MaxWidthWrapper = styled.div`
   max-width: 64rem;
   margin: auto;

@@ -1,15 +1,15 @@
 import styled from "styled-components";
 import React from "react";
-import LinkedInLogo from "../assets/linkedIn.svg";
-import GithubLogo from "../assets/github.svg";
-import EmailLogo from "../assets/email_solid.svg";
+import LinkedInLogo from "../../assets/images/linkedIn.svg";
+import GithubLogo from "../../assets/images/github.svg";
+import EmailLogo from "../../assets/images/email_solid.svg";
 interface Props {}
 
-const Footer: React.FC<Props> = () => {
-  const LINKEDIN_URL = "https://www.linkedin.com/in/michael-poulgrain/";
-  const GITHUB_URL = "https://github.com/Michaelp1994/";
-  const EMAIL = "mailto:michael.poulgrain@gmail.com";
+const LINKEDIN_URL = "https://www.linkedin.com/in/michael-poulgrain/";
+const GITHUB_URL = "https://github.com/Michaelp1994/";
+const EMAIL = "mailto:michael.poulgrain@gmail.com";
 
+const Footer: React.FC<Props> = () => {
   return (
     <Wrapper>
       <MaxWidthWrapper>

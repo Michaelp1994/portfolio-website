@@ -1,21 +1,21 @@
 import styled from "styled-components";
 import React from "react";
-import ReactIcon from "../assets/reactIcon.svg";
-import JavaScriptIcon from "../assets/javascript.svg";
-import TypeScriptIcon from "../assets/typescript.svg";
-import VueIcon from "../assets/vueIcon.svg";
-import HTMLIcon from "../assets/html.svg";
-import CSSIcon from "../assets/css.svg";
-import NodeIcon from "../assets/nodejs.svg";
-import DockerIcon from "../assets/docker.svg";
-import ElectronIcon from "../assets/electron.svg";
-import GitIcon from "../assets/git.svg";
-import GraphqlIcon from "../assets/graphql.svg";
-import PostgresqlIcon from "../assets/postgresql.svg";
-import JestIcon from "../assets/jest.svg";
-import AWSIcon from "../assets/aws.svg";
-import PythonIcon from "../assets/python.svg";
-import PHPIcon from "../assets/php.svg";
+import ReactIcon from "../../assets/images/reactIcon.svg";
+import JavaScriptIcon from "../../assets/images/javascript.svg";
+import TypeScriptIcon from "../../assets/images/typescript.svg";
+import VueIcon from "../../assets/images/vueIcon.svg";
+import HTMLIcon from "../../assets/images/html.svg";
+import CSSIcon from "../../assets/images/css.svg";
+import NodeIcon from "../../assets/images/nodejs.svg";
+import DockerIcon from "../../assets/images/docker.svg";
+import ElectronIcon from "../../assets/images/electron.svg";
+import GitIcon from "../../assets/images/git.svg";
+import GraphqlIcon from "../../assets/images/graphql.svg";
+import PostgresqlIcon from "../../assets/images/postgresql.svg";
+import JestIcon from "../../assets/images/jest.svg";
+import AWSIcon from "../../assets/images/aws.svg";
+import PythonIcon from "../../assets/images/python.svg";
+import PHPIcon from "../../assets/images/php.svg";
 
 interface Props {}
 

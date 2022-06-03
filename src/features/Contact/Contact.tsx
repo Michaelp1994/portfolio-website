@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import React from "react";
-import BaseButton from "./BaseButton";
+import BaseButton from "../../components/BaseButton";
 
 interface Props {}
 

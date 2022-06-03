@@ -1,9 +1,8 @@
 import styled from "styled-components";
 import React from "react";
-import resumePdf from "../assets/resume.pdf";
-import BaseButton from "./BaseButton";
-import { QUERIES } from "../constants";
-import MobileMenu from "./MobileMenu";
+import BaseButton from "../../components/BaseButton";
+import { QUERIES } from "../../constants";
+import MobileMenu from "../MobileMenu/MobileMenu";
 interface Props {}
 
 const NavBar: React.FC<Props> = () => {
@@ -17,7 +16,7 @@ const NavBar: React.FC<Props> = () => {
           <TextItem href="#skills">SKILLS</TextItem>
           <TextItem href="#projects">PROJECTS</TextItem>
           <TextItem href="#contact">CONTACT</TextItem>
-          <NavItem href={resumePdf}>
+          <NavItem href="/resume.pdf">
             <FakeButton>RESUME</FakeButton>
           </NavItem>
         </RightWrapper>

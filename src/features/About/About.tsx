@@ -1,19 +1,26 @@
 import styled from "styled-components";
 import React from "react";
-import personalPhoto from "../assets/me.jpg";
-import LinkedInLogo from "../assets/linkedIn.svg";
-import GithubLogo from "../assets/github.svg";
-import EmailLogo from "../assets/email.svg";
+import { StaticImage } from "gatsby-plugin-image";
+
+// import personalPhoto from "../../assets/images/me.jpg";
+import LinkedInLogo from "../../assets/images/linkedIn.svg";
+import GithubLogo from "../../assets/images/github.svg";
+import EmailLogo from "../../assets/images/email.svg";
+
+const LINKEDIN_URL = "https://www.linkedin.com/in/michael-poulgrain/";
+const GITHUB_URL = "https://github.com/Michaelp1994/";
+const EMAIL = "mailto:michael.poulgrain@gmail.com";
 
 interface Props {}
 
 const Introduction: React.FC<Props> = () => {
-  const LINKEDIN_URL = "https://www.linkedin.com/in/michael-poulgrain/";
-  const GITHUB_URL = "https://github.com/Michaelp1994/";
-  const EMAIL = "mailto:michael.poulgrain@gmail.com";
   return (
     <Wrapper>
-      <Picture src={personalPhoto} />
+      <StaticImage
+        src="../../assets/images/me.jpg"
+        alt="Michael Poulgrain"
+        className="personalPhoto"
+      />
       <AboutMeSection>
         <HeaderText>Hi, I'm Michael!</HeaderText>
         <SubtitleText>
@@ -45,20 +52,9 @@ const Wrapper = styled.section`
   margin-top: 48px;
   gap: 50px;
 `;
-const Picture = styled.img`
-  border-radius: 50%;
-  object-fit: cover;
-  /* width: 250px; */
-  /* height: 250px; */
-  margin-top: 30px;
-  flex: 1;
-  max-width: 350px;
-  aspect-ratio: 1;
-`;
 
 const AboutMeSection = styled.div`
   flex: 2;
-  /* min-width: 500px; */
 `;
 
 const HeaderText = styled.h1`

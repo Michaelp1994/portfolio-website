@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import React from "react";
-import ProjectPhoto from "../assets/typegraphql_eslint_computer.png";
-import BaseButton from "./BaseButton";
-import NodeIcon from "../assets/nodejs.svg";
-import TypeScriptIcon from "../assets/typescript.svg";
-import SkillsList from "./SkillsList";
+import { StaticImage } from "gatsby-plugin-image";
+
+import BaseButton from "../../components/BaseButton";
+import NodeIcon from "../../assets/images/nodejs.svg";
+import TypeScriptIcon from "../../assets/images/typescript.svg";
+import SkillsList from "../../components/SkillsList";
 
 interface Props {}
 
@@ -12,13 +13,16 @@ const skills = [
   { name: "Typescript", Icon: TypeScriptIcon },
   { name: "Node.js", Icon: NodeIcon },
 ];
-
 const GITHUB_URL = "https://github.com/Michaelp1994/eslint-plugin-typegraphql";
+
 const ProjectThree: React.FC<Props> = () => {
   return (
     <Wrapper>
       <ImageWrapper>
-        <ProjectImage src={ProjectPhoto} />
+        <StaticImage
+          src="../../assets/images/typegraphql_eslint_computer.png"
+          alt="TypeGraphQL Eslint Plugin Screenshot"
+        />
       </ImageWrapper>
       <InformationWrapper>
         <ProjectTitle>TypeGraphQL ESlint Plugin</ProjectTitle>
@@ -75,8 +79,4 @@ const ButtonsWrapper = styled.div`
 const GithubButton = styled(BaseButton)`
   width: 200px;
 `;
-const LiveButton = styled(BaseButton)`
-  width: 200px;
-`;
-
 export default ProjectThree;

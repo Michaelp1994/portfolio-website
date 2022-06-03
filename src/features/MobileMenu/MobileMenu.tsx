@@ -1,10 +1,9 @@
 import styled from "styled-components";
 import React from "react";
-import MenuIcon from "../assets/menuIcon.svg";
-import CloseIcon from "../assets/closeIcon.svg";
+import MenuIcon from "../../assets/images/menuIcon.svg";
+import CloseIcon from "../../assets/images/closeIcon.svg";
 import { DialogOverlay, DialogContent } from "@reach/dialog";
 // import "@reach/dialog/styles.css";
-import resumePdf from "../assets/resume.pdf";
 interface Props {}
 
 const MobileMenu: React.FC<Props> = () => {
@@ -38,7 +37,7 @@ const MobileMenu: React.FC<Props> = () => {
             </MenuLink>
           </MenuItem>
           <MenuItem>
-            <MenuLink href={resumePdf} onClick={close}>
+            <MenuLink href="/resume.pdf" onClick={close}>
               RESUME
             </MenuLink>
           </MenuItem>

@@ -1,15 +1,15 @@
 import styled from "styled-components";
 import React from "react";
-import ProjectPhoto from "../assets/logbook_photo.png";
-import BaseButton from "./BaseButton";
-import VueIcon from "../assets/vueIcon.svg";
-import TypeScriptIcon from "../assets/typescript.svg";
-import NodeIcon from "../assets/nodejs.svg";
-import GraphQLIcon from "../assets/graphql.svg";
-import PostgreSQLIcon from "../assets/postgresql.svg";
-import Tooltip from "@reach/tooltip";
-import "@reach/tooltip/styles.css";
-import SkillsList from "./SkillsList";
+import { StaticImage } from "gatsby-plugin-image";
+
+import BaseButton from "../../components/BaseButton";
+import VueIcon from "../../assets/images/vueIcon.svg";
+import TypeScriptIcon from "../../assets/images/typescript.svg";
+import NodeIcon from "../../assets/images/nodejs.svg";
+import GraphQLIcon from "../../assets/images/graphql.svg";
+import PostgreSQLIcon from "../../assets/images/postgresql.svg";
+import SkillsList from "../../components/SkillsList";
+
 interface Props {}
 const GITHUB_URL = "https://github.com/Michaelp1994/neurosurgery-logbook";
 const LIVE_URL = "https://neurosurgery-logbook.herokuapp.com/";
@@ -21,11 +21,15 @@ const skills = [
   { name: "PostgresQL", Icon: PostgreSQLIcon },
   { name: "GraphQL", Icon: GraphQLIcon },
 ];
+
 const ProjectOne: React.FC<Props> = () => {
   return (
     <Wrapper>
       <ImageWrapper>
-        <ProjectImage src={ProjectPhoto} />
+        <StaticImage
+          src="../../assets/images/logbook_photo.png"
+          alt="Neurosurgery Logbook Screenshot"
+        />
       </ImageWrapper>
       <InformationWrapper>
         <ProjectTitle>Neurosurgery Logbook</ProjectTitle>

@@ -1,13 +1,14 @@
 import styled from "styled-components";
 import React from "react";
-import ProjectPhoto from "../assets/project_two.webp";
-import BaseButton from "./BaseButton";
-import ReactIcon from "../assets/reactIcon.svg";
-import TypeScriptIcon from "../assets/typescript.svg";
-import GatsbyIcon from "../assets/gatsby.svg";
-import HTMLIcon from "../assets/html.svg";
-import CSSIcon from "../assets/css.svg";
-import SkillsList from "./SkillsList";
+import { StaticImage } from "gatsby-plugin-image";
+
+import BaseButton from "../../components/BaseButton";
+import ReactIcon from "../../assets/images/reactIcon.svg";
+import TypeScriptIcon from "../../assets/images/typescript.svg";
+import GatsbyIcon from "../../assets/images/gatsby.svg";
+import HTMLIcon from "../../assets/images/html.svg";
+import CSSIcon from "../../assets/images/css.svg";
+import SkillsList from "../../components/SkillsList";
 
 const skills = [
   { name: "React", Icon: ReactIcon },
@@ -19,11 +20,15 @@ const skills = [
 
 interface Props {}
 const GITHUB_URL = "https://github.com/Michaelp1994/portfolio-website";
+
 const ProjectTwo: React.FC<Props> = () => {
   return (
     <Wrapper>
       <ImageWrapper>
-        <ProjectImage src={ProjectPhoto} />
+        <StaticImage
+          src="../../assets/images/project_two.webp"
+          alt="Personal Portfolio Screenshot"
+        />
       </ImageWrapper>
       <InformationWrapper>
         <ProjectTitle>Personal Portfolio</ProjectTitle>
@@ -50,6 +55,7 @@ const Wrapper = styled.div`
   flex-wrap: wrap;
   justify-content: center;
 `;
+
 const InformationWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -57,6 +63,7 @@ const InformationWrapper = styled.div`
   min-width: 250px;
   max-width: 500px;
 `;
+
 const ImageWrapper = styled.div`
   flex: 1;
   min-width: 350px;
@@ -64,24 +71,25 @@ const ImageWrapper = styled.div`
 `;
 
 const ProjectImage = styled.img``;
+
 const ProjectTitle = styled.div`
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
 `;
+
 const ProjectInfo = styled.p`
   text-align: right;
 `;
+
 const ButtonsWrapper = styled.div`
   display: flex;
   gap: 12px;
   align-self: stretch;
   justify-content: space-evenly;
 `;
+
 const GithubButton = styled(BaseButton)`
-  width: 200px;
-`;
-const LiveButton = styled(BaseButton)`
   width: 200px;
 `;
 
