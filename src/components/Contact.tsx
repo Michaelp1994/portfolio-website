@@ -8,29 +8,29 @@ const Contact: React.FC<Props> = () => {
   return (
     <Wrapper id="contact">
       <SectionTitle>Contact</SectionTitle>
-      {/* <TitleUnderline /> */}
       <Subtitle>
         Interested in working together or have a question? Get in touch below!
       </Subtitle>
-      <FormWrapper data-netlify="true">
+      <FormWrapper name="contact" method="post" data-netlify="true">
         <InputLabel>
           <LabelText>Name</LabelText>
-          <NameInput placeholder="John Smith" />
+          <NameInput name="name" placeholder="John Smith" />
         </InputLabel>
         <InputLabel>
           <LabelText>Email</LabelText>
-          <EmailInput placeholder="example@gmail.com" />
+          <EmailInput name="email" placeholder="example@gmail.com" />
         </InputLabel>
 
         <InputLabel>
           <LabelText>Message</LabelText>
           <MessageInput
+            name="message"
             as="textarea"
             placeholder="Let's get in touch!"
             rows={4}
           />
         </InputLabel>
-        <SubmitButton as="input" type="submit" value="SUBMIT" />
+        <SubmitButton type="submit">SUBMIT</SubmitButton>
       </FormWrapper>
     </Wrapper>
   );

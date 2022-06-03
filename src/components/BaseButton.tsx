@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const BaseButton = styled.div`
+const BaseButton = styled.button`
   padding: 12px 24px;
   border-radius: 24px;
   text-align: center;
