@@ -12,7 +12,7 @@ const Contact: React.FC<Props> = () => {
       <Subtitle>
         Interested in working together or have a question? Get in touch below!
       </Subtitle>
-      <FormWrapper netlify>
+      <FormWrapper data-netlify="true">
         <InputLabel>
           <LabelText>Name</LabelText>
           <NameInput placeholder="John Smith" />
