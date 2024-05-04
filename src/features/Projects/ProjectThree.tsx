@@ -62,8 +62,6 @@ const ImageWrapper = styled.div`
   min-width: 350px;
   max-width: 500px;
 `;
-
-const ProjectImage = styled.img``;
 const ProjectTitle = styled.div`
   font-size: 1.5rem;
   font-weight: 700;

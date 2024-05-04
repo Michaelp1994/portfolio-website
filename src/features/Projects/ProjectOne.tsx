@@ -75,7 +75,6 @@ const ImageWrapper = styled.div`
   max-width: 500px;
 `;
 
-const ProjectImage = styled.img``;
 const ProjectTitle = styled.div`
   font-size: 1.5rem;
   font-weight: 700;
