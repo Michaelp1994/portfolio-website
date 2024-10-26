@@ -11,7 +11,6 @@ import { siteConfig } from "@/site-config";
 interface Props {
     meta: SiteMeta;
 }
-
 const {
     meta: { articleDate, description = siteConfig.description, ogImage, title },
 } = Astro.props;
@@ -35,6 +34,6 @@ const {
             <Header />
             <slot />
             <Footer />
-        </main>``
+        </main>
     </body>
 </html>
