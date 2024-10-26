@@ -1,14 +1,16 @@
 {
 	"name": "astro-blog",
-	"type": "module",
 	"version": "0.0.1",
+	"type": "module",
 	"scripts": {
-		"dev": "astro check --watch & astro dev",
-		"start": "astro dev",
-		"build": "astro check && astro build",
+		"build": "astro build",
+		"check": "astro check",
+		"clean": "rm -rf dist .astro node_modules",
+		"dev": "astro dev",
+		"format": "prettier --write  \"**/*.{js,jsx,ts,tsx,md,mdx,svelte,astro}\"",
+		"lint": " eslint --fix \"src/**/*.{js,ts,jsx,tsx,svelte,astro}\"",
 		"preview": "astro preview",
-		"astro": "astro",
-		"lint": "prettier --write  \"**/*.{js,jsx,ts,tsx,md,mdx,svelte,astro}\" && eslint --fix \"src/**/*.{js,ts,jsx,tsx,svelte,astro}\""
+		"start": "astro dev"
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.5.6",
