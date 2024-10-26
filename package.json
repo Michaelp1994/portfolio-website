@@ -1,54 +1,47 @@
 {
-  "name": "personal-portfolio",
-  "version": "1.0.0",
-  "private": true,
-  "description": "The Personal Portfolio of Michael Poulgrain.",
-  "author": {
-    "name": "Michael Poulgrain",
-    "email": "michael.poulgrain@gmail.com",
-    "url": "https://www.michaelpoulgrain.com/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Michaelp1994/portfolio-website"
-  },
-  "keywords": [
-    "gatsby",
-    "portfolio"
-  ],
-  "homepage": "https://github.com/Michaelp1994/portfolio-website",
-  "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "@reach/dialog": "^0.17.0",
-    "@reach/tooltip": "^0.17.0",
-    "babel-plugin-styled-components": "^2.0.7",
-    "gatsby": "^4.13.1",
-    "gatsby-plugin-image": "^2.15.1",
-    "gatsby-plugin-react-helmet": "^5.14.0",
-    "gatsby-plugin-react-svg": "^3.1.0",
-    "gatsby-plugin-sharp": "^4.15.1",
-    "gatsby-plugin-styled-components": "^5.13.0",
-    "gatsby-source-filesystem": "^4.15.0",
-    "gatsby-transformer-sharp": "^4.15.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0",
-    "styled-components": "^5.3.5"
-  },
-  "devDependencies": {
-    "@types/node": "^17.0.31",
-    "@types/react": "^17.0.44",
-    "@types/react-dom": "^17.0.16",
-    "@types/react-helmet": "^6.1.5",
-    "@types/styled-components": "^5.1.25",
-    "typescript": "^4.6.4"
-  }
+	"name": "astro-blog",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro check --watch & astro dev",
+		"start": "astro dev",
+		"build": "astro check && astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"lint": "prettier --write  \"**/*.{js,jsx,ts,tsx,md,mdx,svelte,astro}\" && eslint --fix \"src/**/*.{js,ts,jsx,tsx,svelte,astro}\""
+	},
+	"dependencies": {
+		"@astrojs/check": "^0.5.6",
+		"@astrojs/mdx": "^2.1.1",
+		"@astrojs/rss": "^4.0.5",
+		"@astrojs/sitemap": "^3.1.1",
+		"@astrojs/tailwind": "^5.1.0",
+		"@astrojs/vercel": "^7.3.6",
+		"@vercel/analytics": "^1.2.2",
+		"astro": "^4.4.15",
+		"astro-expressive-code": "^0.33.5",
+		"astro-icon": "^1.1.0",
+		"clsx": "^2.1.0",
+		"mdast-util-to-string": "^4.0.0",
+		"reading-time": "^1.5.0",
+		"rehype-external-links": "^3.0.0",
+		"remark-unwrap-images": "^4.0.0",
+		"sharp": "^0.33.2",
+		"tailwind-merge": "^2.2.1",
+		"tailwindcss": "^3.4.1",
+		"typescript": "^5.4.2"
+	},
+	"devDependencies": {
+		"@tailwindcss/aspect-ratio": "^0.4.2",
+		"@tailwindcss/typography": "^0.5.10",
+		"@typescript-eslint/parser": "^7.1.1",
+		"eslint": "^8.57.0",
+		"eslint-plugin-astro": "^0.31.4",
+		"eslint-plugin-jsx-a11y": "^6.8.0",
+		"prettier": "^3.2.5",
+		"prettier-config-standard": "^7.0.0",
+		"prettier-plugin-astro": "^0.13.0",
+		"prettier-plugin-tailwindcss": "^0.5.12"
+	},
+	"packageManager": "pnpm@9.12.2+sha512.22721b3a11f81661ae1ec68ce1a7b879425a1ca5b991c975b074ac220b187ce56c708fe5db69f4c962c989452eee76c82877f4ee80f474cebd61ee13461b6228"
 }
