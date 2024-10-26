@@ -4,13 +4,13 @@
     "type": "module",
     "scripts": {
         "build": "astro build",
-        "check": "astro check",
         "clean": "rm -rf dist .astro node_modules",
         "dev": "astro dev",
         "format": "prettier --write  \"**/*.{js,jsx,ts,tsx,md,mdx,svelte,astro}\"",
         "lint": " eslint src/**/*.{js,astro}",
         "preview": "astro preview",
-        "start": "astro dev"
+        "start": "astro dev",
+        "typecheck": "astro check"
     },
     "dependencies": {
         "@astrojs/check": "^0.9.4",
