@@ -1,5 +1,8 @@
 import { fontFamily } from "tailwindcss/defaultTheme";
 
+import typography from "@tailwindcss/typography";
+import aspectRatio from "@tailwindcss/aspect-ratio";
+
 /** @type {import('tailwindcss').Config} */
 const config = {
     darkMode: ["class"],
@@ -8,10 +11,7 @@ const config = {
     corePlugins: {
         aspectRatio: false,
     },
-    plugins: [
-        require("@tailwindcss/typography"),
-        require("@tailwindcss/aspect-ratio"),
-    ],
+    plugins: [typography, aspectRatio],
     theme: {
         container: {
             center: true,
