@@ -8,9 +8,10 @@ import expressiveCode from "astro-expressive-code";
 import { expressiveCodeOptions } from "./src/site.config";
 import icon from "astro-icon";
 import rehypeUnwrapImages from "rehype-unwrap-images";
+import aws from "astro-sst";
 
 export default defineConfig({
-    site: "https://michaelpoulgrain.com",
+    site: "https://poulgrain.link",
     integrations: [
         expressiveCode(expressiveCodeOptions),
         tailwind({
@@ -40,4 +41,5 @@ export default defineConfig({
     },
     prefetch: true,
     output: "static",
+    adapter: aws(),
 });
