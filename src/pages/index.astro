@@ -1,0 +1,155 @@
+---
+import PageLayout from "../layouts/BaseLayout.astro";
+import Section from "../components/Section.astro";
+import Card from "../components/Card.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import SkillLayout from "../components/SkillLayout.astro";
+import Hero from "../components/Hero.astro";
+
+const languages = ["JavaScript", "TypeScript", "PHP", "Python", "C"];
+const frontend = ["React", "Vue.js", "HTML", "CSS", "TailwindCSS"];
+const backend = ["Next.js", "Express.js", "Django"];
+const database = ["PostgreSQL", "MySQL", "SQLite", "DrizzleJS", "TypeORM"];
+const others = ["Git", "Github", "AWS", "Electronjs", "Vitest"];
+---
+
+<PageLayout meta={{ title: "Home" }}>
+    <div class="flex w-full flex-col gap-y-10">
+        <Hero />
+
+        <Section title="Experience">
+            <Card
+                heading="Sota Service"
+                subheading="Electrical Engineer"
+                date="2023 - 2024"
+                imagePath="/src/assets/sotaservice.png"
+                altText="Logo for Sota Service Company"
+                imageClass="h-12 w-auto md:-left-16"
+            >
+                <ul class="ml-4 list-disc">
+                    <li>
+                        Conducted grounding analysis studies including ground
+                        fault current, touch and step voltage calculations and
+                        lightning protection for substations within Brazil.
+                    </li>
+
+                    <li>
+                        Developed an electron desktop application to calculate
+                        ground fault current along a transmission line to
+                        improve speed and accuracy of results
+                    </li>
+                </ul>
+            </Card>
+            <Card
+                heading="Nova Biomedical"
+                subheading="Biomedical Engineer"
+                date="2018 - 2021"
+                imagePath="/src/assets/nova.png"
+                altText="Lorem, ipsum dolor sit"
+                imageClass="h-12 w-auto md:-left-16"
+            >
+                <li>
+                    Preventative and corrective maintenance of medical devices
+                    including ventilators, ultrasound, hospital networks as
+                    required by AS/NZ 3551
+                </li>
+                <li>
+                    Installation of patient monitoring in hospitals across
+                    AU/NZ.
+                </li>
+                <li>
+                    Project management and implementation of field corrective
+                    orders for BD and Philips Healthcare across AU/NZ.
+                </li>
+                <li>
+                    Developed and maintained business applications for
+                    record-keeping and asset management both internally and for
+                    the Royal Flying Doctors Service QLD.
+                </li>
+            </Card>
+        </Section>
+
+        <Section title="Education">
+            <Card
+                heading="Griffith University"
+                subheading="Bachelor of Engineering (Electrical & Electronic Engineering)"
+                date="2013 - 2016"
+                imagePath="/src/assets/griffith.png"
+                altText="Lorem, ipsum dolor sit"
+                imageClass="h-12 w-auto md:-left-16"
+            >
+                <ul class="ml-4 list-disc">
+                    <li>Class IIA Honours, 5.7 GPA (7.0 scale)</li>
+                    <li>Awarded Griffith Award for Academic Excellence 2014</li>
+                    <li>
+                        Distinction in thesis, "The application of weather
+                        forecasting in small scale solar photovoltaic (PV)
+                        grids." undertaken at Rhine-Waal University of Applied
+                        Sciences in Kleve, Germany
+                    </li>
+                </ul>
+            </Card>
+        </Section>
+
+        <Section title="Projects">
+            <div
+                class="flex flex-col gap-y-3 sm:flex-row sm:gap-x-3 sm:gap-y-0"
+            >
+                <ProjectCard
+                    href="https://github.com/Michaelp1994/transmission-lines"
+                    heading="Transmission Line"
+                    subheading="An Electronjs application built for calculating and visualizing ground fault current in transmission lines."
+                    imagePath="/src/assets/Igrounding.png"
+                    altText="Screenshot of Transmission lines Electron App"
+                    class="w-full sm:w-1/2"
+                />
+                <ProjectCard
+                    href="https://github.com/Michaelp1994/workshop-repairs"
+                    heading="Workshop Repairs"
+                    subheading="A fullstack web application built for managing and tracking client assets and repairs in the biomedical field."
+                    imagePath="/src/assets/workshop-repairs.png"
+                    altText="Screenshot of Workshop Repairs Web App"
+                    class="w-full sm:w-1/2"
+                />
+            </div>
+        </Section>
+
+        <Section title="Certifications">
+            <Card
+                as="a"
+                heading="Meta Front-End Developer"
+                date="Nov 2023 - Jan 2024"
+                imagePath="/src/assets/meta.png"
+                altText="Meta Front-End Developer"
+                imageClass="h-11 w-auto md:-left-16"
+                href="https://coursera.org/verify/professional-cert/X4BXH7WRZH3T"
+            />
+            <Card
+                as="a"
+                heading="Meta Back-End Developer"
+                date="Nov 2023 - Jan 2024"
+                imagePath="/src/assets/meta.png"
+                altText="Meta Back-End Developer"
+                imageClass="h-11 w-auto md:-left-16"
+                href="https://www.coursera.org/account/accomplishments/professional-cert/QZHMLFRQ5QC8"
+            />
+            <Card
+                as="a"
+                heading="Meta Database Engineer"
+                date="Nov 2023 - Jan 2024"
+                imagePath="/src/assets/meta.png"
+                altText="Meta Database Engineer"
+                imageClass="h-11 w-auto md:-left-16"
+                href="https://coursera.org/verify/professional-cert/H2H8QRL98P5B"
+            />
+        </Section>
+
+        <Section title="Skills">
+            <SkillLayout title="Languages" skills={languages} />
+            <SkillLayout title="Frontend" skills={frontend} />
+            <SkillLayout title="Backend" skills={backend} />
+            <SkillLayout title="Database" skills={database} />
+            <SkillLayout title="Others" skills={others} />
+        </Section>
+    </div>
+</PageLayout>
