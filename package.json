@@ -4,7 +4,7 @@
     "type": "module",
     "scripts": {
         "build": "astro build",
-        "clean": "rm -rf dist .astro node_modules",
+        "clean": "rm -rf dist .astro node_modules .sst",
         "dev": "astro dev",
         "format": "prettier --write  \"**/*.{js,jsx,ts,tsx,md,mdx,svelte,astro}\"",
         "lint": " eslint **/*.{js,jsx,ts,tsx,md,mdx,svelte,astro}",
