@@ -39,8 +39,8 @@ importers:
         specifier: ^1.1.4
         version: 1.1.4
       astro-sst:
-        specifier: 2.43.5
-        version: 2.43.5
+        specifier: 2.45.2
+        version: 2.45.2
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -56,15 +56,12 @@ importers:
       rehype-unwrap-images:
         specifier: ^1.0.0
         version: 1.0.0
-      remark-unwrap-images:
-        specifier: ^5.0.0
-        version: 5.0.0
       sharp:
         specifier: ^0.33.5
         version: 0.33.5
       sst:
-        specifier: 3.2.61
-        version: 3.2.61
+        specifier: 3.4.5
+        version: 3.4.5
       tailwind-merge:
         specifier: ^2.5.5
         version: 2.5.5
@@ -1081,8 +1078,8 @@ packages:
   astro-icon@1.1.4:
     resolution: {integrity: sha512-sMLkQaevIQLv38WBzb/RDbsmxhg5+X+KcNmpTi9cE6MLurNWU1MPnlO87d9Vwg4HxTenKpDlYp81A3syXFW/gw==}
 
-  astro-sst@2.43.5:
-    resolution: {integrity: sha512-CWSJO5Kdn7B6CI+qvd82T+ldqaI8y5HeQm4U9dGSSZe+v2KtArac94s2PaE27nxMTLy1JNG101cmyZj+1LhdjA==}
+  astro-sst@2.45.2:
+    resolution: {integrity: sha512-Zrrip/9VP5kvoQJ+Kj2tJA1h7mQ3ShAsfKXMqVcz8vqMqCsFjEZPLHDu8zYTGMr3WOX8r3vzY6u5nOeaKFg8ZQ==}
 
   astro@4.16.17:
     resolution: {integrity: sha512-OuD+BP7U6OqQLKtZ/FJkU2S+TOlifxS/OKUbZOb5p6y+LLBa1J3zHRJrIl7DUSq6eXY+9wSWwbJpD9JS+lqhxA==}
@@ -2976,10 +2973,6 @@ packages:
   remark-stringify@11.0.0:
     resolution: {integrity: sha512-1OSmLd3awB/t8qdoEOMazZkNsfVTeY4fTsgzcQFdXNq8ToTN4ZGwrMnlda4K6smTFKD+GRV6O48i6Z4iKgPPpw==}
 
-  remark-unwrap-images@5.0.0:
-    resolution: {integrity: sha512-s7WSIA6s98ywa93v/5x+wFeGgJSl1VJnNYgg//0MUgu12CyxVMi+vcCifXFEUtQfnnWSTXWOH6f8LkDBNLthrg==}
-    deprecated: 'Deprecated: use `rehype-unwrap-images` instead'
-
   request-light@0.5.8:
     resolution: {integrity: sha512-3Zjgh+8b5fhRJBQZoy+zbVKpAQGLyka0MPgW3zruTF4dFFJ8Fqcfu9YsAvi/rvdcaTeWG3MkbZv4WKxAn/84Lg==}
 
@@ -3146,33 +3139,33 @@ packages:
   sprintf-js@1.0.3:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
 
-  sst-darwin-arm64@3.2.61:
-    resolution: {integrity: sha512-1CL5cpy0Lkt0p8h6zE7Ms6pTFsB6K8JF9NdalPyzZl5CvVxyl2oIRa1UCjcYPK3eRnu5KzgCTYZSlS/Y+Z0D+A==}
+  sst-darwin-arm64@3.4.5:
+    resolution: {integrity: sha512-Z6ALcUP7Z2YyGDU5hzyKrUPtQ784tbc5bdQZJyR1G+arX/CvQpqxMkgnicd7k++slQO3qblST9sSsWxrKl5PhQ==}
     cpu: [arm64]
     os: [darwin]
 
-  sst-darwin-x64@3.2.61:
-    resolution: {integrity: sha512-jtoY9Q457sz+S150tDO1ZByY4QtkQNY+0Q8lcX6Jb8Wk3SadG0N1ygdz5pH4pJR3Cnr2m8YZppKzOPiG2nWVHg==}
+  sst-darwin-x64@3.4.5:
+    resolution: {integrity: sha512-hpJHohtzNg3OlboPjM3DIGwHJs32A9iAnrQC4Dq5/yQi1bGzLVw9Tq+lbUcF80PbMe6mpQM+0Q6qgamYYp4QLA==}
     cpu: [x64]
     os: [darwin]
 
-  sst-linux-arm64@3.2.61:
-    resolution: {integrity: sha512-8HNQJqnq4JfQpx2WdCygnskoAFEM7DBIutTzjd4UWCn3U5lPfRjJphoCwE9bVWR5ub9Ioog0DXnkjYBfycgvUQ==}
+  sst-linux-arm64@3.4.5:
+    resolution: {integrity: sha512-njOpateSc9w2/9aqZInHNNjY3dhslaC8H8JH6Xy9iFj72BeNjhKPC3eaOlywM0F0LwnvIsepCdsZpm53MTa+PQ==}
     cpu: [arm64]
     os: [linux]
 
-  sst-linux-x64@3.2.61:
-    resolution: {integrity: sha512-gMJ1r9bx0kOwF1kG8PjSkhCLeaXOSYfGkoBZ74uklZ/DgffAc/B6zL+vDDQy+SWIE2CBuH3rqiOq5AXfLxPpjQ==}
+  sst-linux-x64@3.4.5:
+    resolution: {integrity: sha512-QGAqu782p8ZSB9kQDVe+fj6aO7E2S/0bRXK3j9Qw7RIYk5IS037Ri9znSun+6wnSnsn9ShMC9ClBeWLmN+RrOA==}
     cpu: [x64]
     os: [linux]
 
-  sst-linux-x86@3.2.61:
-    resolution: {integrity: sha512-crBacRd5gif/6pEI83pdmzJVKq/sCq+e9QB3khLQ2cPzyVGmvZ8UL9ed+aVsqVbBKv6qEk2AX6Qv7HVEKrN4DQ==}
+  sst-linux-x86@3.4.5:
+    resolution: {integrity: sha512-ZXHXCSyN/zBTuR6SRw4Ur8FA8YhvLk89MDjaPpo3YI95HvMnZpl6skgDuQ/yAP8ftFTMdf+kHCLRpn0X6yNRbA==}
     cpu: [x86]
     os: [linux]
 
-  sst@3.2.61:
-    resolution: {integrity: sha512-ystjIaNNqtWubGn+MOKCPWKzj7dfiDHJGpbfoVepATcGwtipN376VXqO9caGfciy7RhzFj2wPMyMCdIkGSCjMA==}
+  sst@3.4.5:
+    resolution: {integrity: sha512-nfSill7YjTkS4Bml1lfimOiQH5zqdT8x+5njyMk3JFXb7tOMDoNVju6fVYRPp2Ed9LiN6s+lb79yRenikS2CCw==}
     hasBin: true
     peerDependencies:
       hono: 4.x
@@ -4829,7 +4822,7 @@ snapshots:
       - debug
       - supports-color
 
-  astro-sst@2.43.5:
+  astro-sst@2.45.2:
     dependencies:
       '@astrojs/webapi': 3.0.0
       set-cookie-parser: 2.7.1
@@ -7283,8 +7276,6 @@ snapshots:
       mdast-util-to-markdown: 2.1.2
       unified: 11.0.5
 
-  remark-unwrap-images@5.0.0: {}
-
   request-light@0.5.8: {}
 
   request-light@0.7.0: {}
@@ -7513,32 +7504,32 @@ snapshots:
 
   sprintf-js@1.0.3: {}
 
-  sst-darwin-arm64@3.2.61:
+  sst-darwin-arm64@3.4.5:
     optional: true
 
-  sst-darwin-x64@3.2.61:
+  sst-darwin-x64@3.4.5:
     optional: true
 
-  sst-linux-arm64@3.2.61:
+  sst-linux-arm64@3.4.5:
     optional: true
 
-  sst-linux-x64@3.2.61:
+  sst-linux-x64@3.4.5:
     optional: true
 
-  sst-linux-x86@3.2.61:
+  sst-linux-x86@3.4.5:
     optional: true
 
-  sst@3.2.61:
+  sst@3.4.5:
     dependencies:
       aws4fetch: 1.0.20
       jose: 5.2.3
       openid-client: 5.6.4
     optionalDependencies:
-      sst-darwin-arm64: 3.2.61
-      sst-darwin-x64: 3.2.61
-      sst-linux-arm64: 3.2.61
-      sst-linux-x64: 3.2.61
-      sst-linux-x86: 3.2.61
+      sst-darwin-arm64: 3.4.5
+      sst-darwin-x64: 3.4.5
+      sst-linux-arm64: 3.4.5
+      sst-linux-x64: 3.4.5
+      sst-linux-x86: 3.4.5
 
   stdin-discarder@0.2.2: {}
 
