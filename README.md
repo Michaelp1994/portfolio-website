@@ -6,11 +6,11 @@ This is my personal portfolio built using TypeScript React, Styled Components an
 
 ## Built With
 
--   [Astro](https://astro.build/)
--   [Astro Resume Theme](https://astro.build/themes/details/resume/)
--   [SST](https://sst.dev/)
--   [Typescript](https://www.typescriptlang.org/)
--   [Tailwind](https://tailwindcss.com/)
+- [Astro](https://astro.build/)
+- [Astro Resume Theme](https://astro.build/themes/details/resume/)
+- [SST](https://sst.dev/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Tailwind](https://tailwindcss.com/)
 
 ## Setup
 
