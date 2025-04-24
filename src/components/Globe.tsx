@@ -18,6 +18,7 @@ export default function Globe() {
                 client:only="react"
                 width={400}
                 height={400}
+                enablePointerInteraction={false}
                 showAtmosphere={false}
                 globeImageUrl="https://cdn.jsdelivr.net/npm/three-globe/example/img/earth-day.jpg"
                 backgroundColor="hsla(0deg, 0%, 0%, 0.0)"
