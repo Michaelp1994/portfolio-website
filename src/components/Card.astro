@@ -15,13 +15,13 @@ const {
     imageClass,
 } = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>(
-    "/src/assets/*.{jpeg,jpg,png,gif}"
+    "/src/assets/*.{jpeg,jpg,png,gif,webp}"
 );
 
 if (imagePath) {
     if (!images[imagePath])
         throw new Error(
-            `"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`
+            `"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp}"`
         );
 }
 ---
