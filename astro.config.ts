@@ -10,17 +10,13 @@ import icon from "astro-icon";
 import rehypeUnwrapImages from "rehype-unwrap-images";
 import aws from "astro-sst";
 
+import react from "@astrojs/react";
+
 export default defineConfig({
     site: "https://poulgrain.link",
-    integrations: [
-        expressiveCode(expressiveCodeOptions),
-        tailwind({
-            applyBaseStyles: false,
-        }),
-        sitemap(),
-        mdx(),
-        icon(),
-    ],
+    integrations: [expressiveCode(expressiveCodeOptions), tailwind({
+        applyBaseStyles: false,
+    }), sitemap(), mdx(), icon(), react()],
     markdown: {
         remarkPlugins: [remarkReadingTime],
         rehypePlugins: [

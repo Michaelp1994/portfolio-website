@@ -1,8 +1,7 @@
 ---
-import { Image } from "astro:assets";
-import heroImage from "../assets/hero.png";
 import Label from "./Label.astro";
 import resume from "../assets/Michael Poulgrain Resume.pdf";
+import Globe from "./Globe";
 ---
 
 <section class="py-5 sm:py-10 lg:py-16">
@@ -46,11 +45,7 @@ import resume from "../assets/Michael Poulgrain Resume.pdf";
                 </div>
             </div>
             <div class="relative order-1 flex justify-center lg:order-2">
-                <Image
-                    class="w-full md:max-w-md lg:max-w-md"
-                    src={heroImage}
-                    alt=" Illustration of a vintage computer with lush green plants growing out of the monitor and surrounding it, symbolizing a blend of technology and nature."
-                />
+                <Globe client:only="react" />
             </div>
         </div>
     </div>
