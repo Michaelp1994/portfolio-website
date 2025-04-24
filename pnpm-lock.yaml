@@ -42,8 +42,8 @@ importers:
         specifier: ^1.1.5
         version: 1.1.5
       astro-sst:
-        specifier: 2.45.2
-        version: 2.45.2
+        specifier: 3.1.3
+        version: 3.1.3
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -203,10 +203,6 @@ packages:
     resolution: {integrity: sha512-mJAbaXwLBVsk+5JNwzKIrpvIQ4llW/gS9ut5Rot5x6D+9DYSqfZ6PRIT0YvyzgUackahYAQdH/MZWeqVrcmwuA==}
     peerDependencies:
       astro: ^5.0.0
-
-  '@astrojs/webapi@3.0.0':
-    resolution: {integrity: sha512-+/Wruju2Ho99z0jI8zxMFGBkKKG97RzR/srSaColejUDrczkAjR3HjULKTVfDdIpvtvFZLyl7OMBmHKQazfeZg==}
-    deprecated: This package is not used by Astro any more and is no longer maintained. In Astro 3.0 polyfills are part of a core module.
 
   '@astrojs/yaml2ts@0.2.2':
     resolution: {integrity: sha512-GOfvSr5Nqy2z5XiwqTouBBpy5FyI6DEe+/g/Mk5am9SjILN1S5fOEvYK0GuWHg98yS/dobP4m8qyqw/URW35fQ==}
@@ -524,10 +520,6 @@ packages:
 
   '@expressive-code/plugin-text-markers@0.41.2':
     resolution: {integrity: sha512-JFWBz2qYxxJOJkkWf96LpeolbnOqJY95TvwYc0hXIHf9oSWV0h0SY268w/5N3EtQaD9KktzDE+VIVwb9jdb3nw==}
-
-  '@fastify/busboy@2.1.1':
-    resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
-    engines: {node: '>=14'}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -1279,8 +1271,8 @@ packages:
   astro-icon@1.1.5:
     resolution: {integrity: sha512-CJYS5nWOw9jz4RpGWmzNQY7D0y2ZZacH7atL2K9DeJXJVaz7/5WrxeyIxO8KASk1jCM96Q4LjRx/F3R+InjJrw==}
 
-  astro-sst@2.45.2:
-    resolution: {integrity: sha512-Zrrip/9VP5kvoQJ+Kj2tJA1h7mQ3ShAsfKXMqVcz8vqMqCsFjEZPLHDu8zYTGMr3WOX8r3vzY6u5nOeaKFg8ZQ==}
+  astro-sst@3.1.3:
+    resolution: {integrity: sha512-adAsf77pU8+xbh+02cKv35p81sM0RwkiGO+PmJPZWTtt6Kz7fyd3Z8e22ji1KA0t7Ls/KUz5+2nBCAbMz1Lu/w==}
 
   astro@5.7.5:
     resolution: {integrity: sha512-c59YuYiXyWWnUMOBlDczrjqKzF0dJQP20EP9vqDggcyKm//tEt9iJHNwoYq4r3UeO9UJCwlGK8FwaGTAwwF3IA==}
@@ -3968,10 +3960,6 @@ packages:
   undici-types@6.21.0:
     resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
-  undici@5.29.0:
-    resolution: {integrity: sha512-raqeBD6NQK4SkWhQzeYKd1KmIG6dllBOTt55Rmkt4HtI9mwdWtJljnrXjAFUBLTSN67HWrOIZ3EPF4kjUw80Bg==}
-    engines: {node: '>=14.0'}
-
   undici@6.21.2:
     resolution: {integrity: sha512-uROZWze0R0itiAKVPsYhFov9LxrPMHLMEQFszeI2gCN6bnIIZ8twzBCJcN2LJrBBLfrP0t1FW0g+JmKVl8Vk1g==}
     engines: {node: '>=18.17'}
@@ -4609,10 +4597,6 @@ snapshots:
       - vue
       - vue-router
 
-  '@astrojs/webapi@3.0.0':
-    dependencies:
-      undici: 5.29.0
-
   '@astrojs/yaml2ts@0.2.2':
     dependencies:
       yaml: 2.7.1
@@ -4912,8 +4896,6 @@ snapshots:
   '@expressive-code/plugin-text-markers@0.41.2':
     dependencies:
       '@expressive-code/core': 0.41.2
-
-  '@fastify/busboy@2.1.1': {}
 
   '@humanfs/core@0.19.1': {}
 
@@ -5714,9 +5696,8 @@ snapshots:
       - debug
       - supports-color
 
-  astro-sst@2.45.2:
+  astro-sst@3.1.3:
     dependencies:
-      '@astrojs/webapi': 3.0.0
       set-cookie-parser: 2.7.1
 
   astro@5.7.5(@types/node@22.14.1)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1):
@@ -9204,10 +9185,6 @@ snapshots:
   uncrypto@0.1.3: {}
 
   undici-types@6.21.0: {}
-
-  undici@5.29.0:
-    dependencies:
-      '@fastify/busboy': 2.1.1
 
   undici@6.21.2: {}
 
