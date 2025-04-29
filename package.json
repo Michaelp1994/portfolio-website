@@ -5,6 +5,7 @@
     "scripts": {
         "build": "astro build",
         "clean": "rm -rf dist .astro node_modules .sst",
+        "deploy": "sst deploy --stage production",
         "dev": "astro dev",
         "format": "prettier --write  \"**/*.{js,jsx,ts,tsx,md,mdx,svelte,astro}\"",
         "lint": " eslint **/*.{js,jsx,ts,tsx,md,mdx,svelte,astro}",
