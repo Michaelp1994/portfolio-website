@@ -6,6 +6,12 @@ export default $config({
             name: "portfolio-website",
             removal: input?.stage === "production" ? "retain" : "remove",
             home: "aws",
+            providers: {
+                aws: {
+                    region: "ap-southeast-2",
+                    profile: "portfolio",
+                },
+            },
         };
     },
     async run() {
