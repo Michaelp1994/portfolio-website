@@ -2,7 +2,7 @@
 
 ## About
 
-This is my personal portfolio built using TypeScript React, Styled Components and Astro. You can view my portfolio live at https://poulgrain.link/
+This is my personal portfolio built using TypeScript React, Styled Components and Astro. You can view my portfolio live at https://poulgrain.dev/
 
 ## Built With
 

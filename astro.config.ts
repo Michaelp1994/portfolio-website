@@ -8,7 +8,6 @@ import expressiveCode from "astro-expressive-code";
 import { expressiveCodeOptions } from "./src/site.config";
 import icon from "astro-icon";
 import rehypeUnwrapImages from "rehype-unwrap-images";
-import aws from "astro-sst";
 
 import react from "@astrojs/react";
 
@@ -27,7 +26,7 @@ export default defineConfig({
                     target: "_blank",
                     rel: ["nofollow, noopener, noreferrer"],
                 },
-            ],
+            ],  
         ],
         remarkRehype: {
             footnoteLabelProperties: {
@@ -37,5 +36,4 @@ export default defineConfig({
     },
     prefetch: true,
     output: "static",
-    adapter: aws(),
 });
