@@ -13,9 +13,16 @@ import react from "@astrojs/react";
 
 export default defineConfig({
     site: "https://poulgrain.link",
-    integrations: [expressiveCode(expressiveCodeOptions), tailwind({
-        applyBaseStyles: false,
-    }), sitemap(), mdx(), icon(), react()],
+    integrations: [
+        expressiveCode(expressiveCodeOptions),
+        tailwind({
+            applyBaseStyles: false,
+        }),
+        sitemap(),
+        mdx(),
+        icon(),
+        react(),
+    ],
     markdown: {
         remarkPlugins: [remarkReadingTime],
         rehypePlugins: [
@@ -26,7 +33,7 @@ export default defineConfig({
                     target: "_blank",
                     rel: ["nofollow, noopener, noreferrer"],
                 },
-            ],  
+            ],
         ],
         remarkRehype: {
             footnoteLabelProperties: {
