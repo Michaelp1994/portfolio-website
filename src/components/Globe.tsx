@@ -7,8 +7,10 @@ export default function Globe() {
         const globe = globeEl.current;
 
         // Auto-rotate
-        globe.controls().autoRotate = true;
-        globe.controls().autoRotateSpeed = 1.5;
+        if (globe) {
+            globe.controls().autoRotate = true;
+            globe.controls().autoRotateSpeed = 1.5;
+        }
     });
 
     return (

@@ -1,13 +1,13 @@
+import { defineConfig } from "eslint/config";
 import eslintPluginAstro from "eslint-plugin-astro";
-import eslint from "@eslint/js";
-export default [
-    // add more generic rule sets here, such as:
-    eslint.configs.recommended,
+import tseslint from "typescript-eslint";
+import js from "@eslint/js";
+export default defineConfig([
+    js.configs.recommended,
+    ...tseslint.configs.recommended,
     ...eslintPluginAstro.configs.recommended,
     {
-        rules: {
-            // override/add rules settings here, such as:
-            // "astro/no-set-html-directive": "error"
-        },
+        // 6. Ignore build artifacts
+        ignores: ["dist/", ".astro/"],
     },
-];
+]);
